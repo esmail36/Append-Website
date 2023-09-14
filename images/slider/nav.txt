@@ -1,0 +1,185 @@
+<!-- Start Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="main-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Append</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">home </a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <i class="fa fa-angle-down" style="margin-left: 5px;" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu drop1">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Single</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu Two <i class="fa fa-angle-right" style="margin-left: 25px;" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu drop2">
+                  <li><a href="#">Sub Menu One</a></li>
+                  <li><a href="#">Sub Menu Two</a></li>
+                  <li><a href="#">Sub Menu Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Menu Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">elements</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          </div><!-- /.navbar-collapse -->
+
+          <div class="empty"></div>
+          
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- End Navbar -->
+
+
+/////////css
+
+// Start Navbar
+
+.navbar-default{
+    background-color: transparent;
+    border: 0;
+    padding: 20px 15px;
+
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-nav{
+            li{
+                a{
+                    color: rgba(255, 255, 255, 0.7);
+                    transition: $transition;
+                }
+                
+                &:hover{
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+            .active,
+            .dropdown{
+                a{
+                    background-color: transparent !important;
+                }
+            }
+
+            .dropdown-menu{
+                    padding: 20px 15px;
+                    padding-right: 0;
+                    padding-bottom: 10px;
+                li{
+
+                    a{
+                        color: #000;
+                        padding: 10px 15px;
+                    }
+                }
+
+                .drop2{
+                    padding: 10px;
+                    padding-right: 0;
+                    left: 143px;
+                    top: 0;
+                }
+
+                
+            }
+            .drop1{
+                left: 0;
+            }
+            }
+
+            
+    }
+
+    .navbar-header{
+        
+        
+
+        .navbar-brand{
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 20px;
+            
+        }
+    }
+
+    .btn{
+        a{
+            padding: 10px 25px;
+            color: #ffffff;
+            background-color: #e84545;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: $transition;
+
+            &:hover{
+                background-color: transparent;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-default{
+
+        .navbar-header{
+            width: 100% !important;
+        }
+
+        .empty{
+            display: none;
+        }
+    }
+}
+
+// End Navbar
+
+
+
+
+
+
+
+<nav class="navbar">
+        <div class="navbar-default">
+
+          <!-- Logo -->
+          <div class="navbar-header">
+            <h4 style="font-weight: 700;"><a href="#" class="logo">Esmail Nbaheen</a></h4>
+          </div>
+
+          <!-- Nav ul -->
+          <div class="navbar-list">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Elements</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <!-- Empty (Optional)-->
+          <div class="empty"></div>
+        </div>
+      </nav>
